@@ -10,6 +10,8 @@ export default class Main extends Component {
             Hello {this.props.name}, <br /> 
             Do you want to see the secret area?<a href="/secret">Click Here</a>
         </p>
+        
+        {/* Only display login button if user is authenticated */}
         {!this.props.auth.isAuthenticated() &&
         <div>
           <hr/>

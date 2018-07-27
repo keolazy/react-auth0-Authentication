@@ -36,6 +36,7 @@ export default class Auth {
           localStorage.setItem('acess_token', authResults.accessToken);
           localStorage.setItem('id_token', authResults.idToken);
           localStorage.setItem('expires_at', expiresAt);
+          console.log(localStorage)
           // removes all that information from query string.
           location.hash = "";
           // redirect to page upon success.
@@ -51,6 +52,4 @@ export default class Auth {
     let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
   }
-
-
 }

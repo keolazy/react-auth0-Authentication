@@ -4,7 +4,6 @@ import './App.css';
 import Main from "./components/Main";
 import Secret from "./components/Secret";
 import NotFound from "./components/NotFound";
-// how auth0 redirects user 
 import Callback from "./components/Callback";
 
 class App extends Component {
@@ -28,7 +27,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React, {this.props.name}</h1>
+          <h1 className="App-title">Welcome to Auth0 React App, {this.props.name}</h1>
         </header>
         {mainComponent}
       </div>

@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Auth from "./Auth";
 
 const auth = new Auth();
+
 let state = {};
 window.setState = (changes) => {
   state = Object.assign({}, state, changes);
@@ -15,7 +16,7 @@ window.setState = (changes) => {
 
 /* eslint no-restricted-globals: 0*/ 
 let initialState = {
-  name: "River City Card Room Guests",
+  name: "Nathan K",
   location: location.pathname.replace(/^\/?|\/$/g, ""),
   auth 
 }
