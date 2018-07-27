@@ -4,7 +4,7 @@ export default class Secret extends Component {
   render() {
     return (
       <div>
-        This is a super secret area. Jump back to <a href='/'>Home </a>
+        This is a <b>super secret area.</b> Jump back to <a href='/'>Home </a>
       </div>
     )
   }
